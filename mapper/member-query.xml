@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key ="insertMember">
+	
+	Insert
+			INTO TBL_MEMBER A
+		(
+		  A.MEMBER_NO
+		 ,A.MEMBER_ID
+		 ,A.MEMBER_PWD
+		 ,A.MEMBER_NAME
+		 ,A.GENDER
+		 ,A.EMAIL
+		 ,A.PHONE
+		 ,A.ADDRESS
+		 ,A.AGE
+		 ,A.ENROLL_DATE
+		)
+		VALUES
+		(
+		SEQ_MEMBER_NO.NEXTVAL
+		, ?
+		, ?
+		, ?
+		, ?
+		, ?
+		, ?
+		, ?
+		, ?
+		,SYSDATE
+	
+		)
+	</entry>
+	<entry key="selectMemberList">
+	SELECT
+		  A.MEMBER_NO
+		 ,A.MEMBER_ID
+		 ,A.MEMBER_PWD
+		 ,A.MEMBER_NAME
+		 ,GENDER
+		 ,EMAIL
+		 ,PHONE
+		 ,ADDRESS
+		 ,AGE
+	
+		FROM TBL_MEMBER A
+	</entry>
+
+	
+</properties>
